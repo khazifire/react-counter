@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import Counters from './components/counters'
 
 function App() {
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="sm:h-full xl:h-screen bg-gray-800 flex items-center justify-center">
+      <div>
+        <h1 className='text-4xl font-semibold text-center text-gray-100'>Air Elements Tracker</h1>
+        <Counters />
+        <Counters />
+      </div>
     </div>
   );
 }
-
 export default App;
